@@ -1,7 +1,7 @@
 require('dotenv').config();
-const Discord = require('discord.js');
-const bot = new Discord.Client();
-bot.commands = new Discord.Collection();
+const { Client, Intents, Collection } = require('discord.js');
+const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+bot.commands = new Collection();
 const botCommands = require('./commands');
 const Gamedig = require('gamedig');
 
