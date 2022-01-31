@@ -6,8 +6,8 @@ const botCommands = require('./commands');
 const Gamedig = require('gamedig');
 
 
-let ipAddress = '5.62.65.39';
-let port = '21778';
+let ipAddress = '5.62.65.82';
+let port = '33778';
 
 Object.keys(botCommands).map(key => {
   bot.commands.set(botCommands[key].name, botCommands[key]);
