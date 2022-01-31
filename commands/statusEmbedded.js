@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const Gamedig = require('gamedig');
 
 module.exports = {
-    name: '!Lost Island',
+    name: '!LostIsland',
     description: 'emdbedded server stats',
     execute(msg, args, ipAddress, port) {
         Gamedig.query({
@@ -21,11 +21,11 @@ module.exports = {
                 { name: 'Day', value: state.raw.rules.DayTime_s, inline: true },
             ).setTimestamp();
     
-            msg.channel.send({embeds: [onlineEmbed]});
+            msg.channel.send(onlineEmbed);
           }).catch( error => {
             const offlineEmbed = new Discord.MessageEmbed()
             .setColor('#009900')
-            .setTitle(`Valguero server stats`)
+            .setTitle(`Lost Island server stats`)
             .setThumbnail('https://cdn.discordapp.com/attachments/718600522516529172/719030410553589781/maxresdefault.png')
             .addField('Server status', 'Offline')
             .setTimestamp();

@@ -35,7 +35,7 @@ bot.on('ready', () => {
 });
 
 
-bot.on('message', msg => {
+bot.on('messageCreate', msg => {
   const args = msg.content.split(/ +/);
   const command = args.shift().toLowerCase();
   console.info(`Called command: ${command}`);
