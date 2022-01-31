@@ -1,0 +1,1 @@
+npmworker: node index.js
