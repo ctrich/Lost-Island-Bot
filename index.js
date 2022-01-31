@@ -32,6 +32,7 @@ bot.on('ready', () => {
     console.log(error);
     bot.user.setActivity('Offline');
   })}, 3000);
+  console.log(`Number of players = ${state.maxplayers}`);
 });
 
 
