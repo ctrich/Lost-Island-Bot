@@ -11,7 +11,7 @@ module.exports = {
             port: port,
             maxAttempts: 2
           }).then( state => {
-            const onlineEmbed = new Discord.MessageCreate()
+            const onlineEmbed = new Discord.MessageEmbed()
             .setColor('#009900')
             .setTitle(`${state.map.replace("_P", "")} server stats`)
             .setThumbnail('https://cdn.discordapp.com/attachments/718600522516529172/719030410553589781/maxresdefault.png')
@@ -21,7 +21,7 @@ module.exports = {
                 { name: 'Day', value: state.raw.rules.DayTime_s, inline: true },
             ).setTimestamp();
     
-            msg.channel.send(onlineEmbed);
+            msg.channel.send({embeds: [onlineEmbed]});
           }).catch( error => {
             const offlineEmbed = new Discord.MessageEmbed()
             .setColor('#009900')
