@@ -11,7 +11,7 @@ module.exports = {
             port: port,
             maxAttempts: 2
           }).then( state => {
-            const onlineEmbed = new Discord.MessageEmbed()
+            const onlineEmbed = new Discord.MessageCreate()
             .setColor('#009900')
             .setTitle(`${state.map.replace("_P", "")} server stats`)
             .setThumbnail('https://cdn.discordapp.com/attachments/718600522516529172/719030410553589781/maxresdefault.png')
