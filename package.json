@@ -21,6 +21,11 @@
   "bugs": {
     "url": "https://github.com/ctrich/Lost-Island-Bot/issues"
   },
+  "engines": {
+
+    "node": "16.13.1"
+
+  },
   "homepage": "https://github.com/ctrich/Lost-Island-Bot#readme",
   "description": ""
 }
