@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const Gamedig = require('gamedig');
 
 module.exports = {
-    name: '!Fjordur',
+    name: '!fjordur',
     description: 'emdbedded server stats',
     execute(msg, args, ipAddress, port) {
         Gamedig.query({
