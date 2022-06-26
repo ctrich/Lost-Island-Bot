@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const Gamedig = require('gamedig');
 
 module.exports = {
-    name: '!lostisland',
+    name: '!Fjordur',
     description: 'emdbedded server stats',
     execute(msg, args, ipAddress, port) {
         Gamedig.query({
@@ -15,7 +15,7 @@ module.exports = {
             const onlineEmbed = new Discord.MessageEmbed()
             .setColor('#009900')
             .setTitle(`${state.name}`)
-            .setThumbnail('https://media.discordapp.net/attachments/719313280749011074/935141082537275423/unknown.png')
+            .setThumbnail('https://media.discordapp.net/attachments/719313280749011074/987159043380482048/unknown.png')
             .addFields(
                 { name: 'Server status', value: 'Online' },
                 { name: 'Players', value: `${state.players.length} of ${state.maxplayers}`},
@@ -27,7 +27,7 @@ module.exports = {
             const offlineEmbed = new Discord.MessageEmbed()
             .setColor('#009900')
             .setTitle(`Lost Island server stats`)
-            .setThumbnail('https://media.discordapp.net/attachments/719313280749011074/935141082537275423/unknown.png')
+            .setThumbnail('https://media.discordapp.net/attachments/719313280749011074/987159043380482048/unknown.png')
             .addField('Server status', 'Offline')
             .setTimestamp();
 
