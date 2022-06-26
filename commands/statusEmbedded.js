@@ -13,7 +13,7 @@ module.exports = {
           }).then( state => {
             const names = state.players;
             console.log(state);
-            console.log("Player names " + names[0]);
+            console.log("Player names " + names[0].name);
             const onlineEmbed = new Discord.MessageEmbed()
             .setColor('#009900')
             .setTitle(`${state.name}`)
