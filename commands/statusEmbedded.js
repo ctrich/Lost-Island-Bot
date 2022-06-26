@@ -12,7 +12,8 @@ module.exports = {
             maxAttempts: 2
           }).then( state => {
             const names = state.players;
-            console.log("Player names" + names);
+            console.log(state);
+            console.log("Player names " + names[0]);
             const onlineEmbed = new Discord.MessageEmbed()
             .setColor('#009900')
             .setTitle(`${state.name}`)
