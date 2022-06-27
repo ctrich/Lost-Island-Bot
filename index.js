@@ -13,7 +13,7 @@ Object.keys(botCommands).map(key => {
   bot.commands.set(botCommands[key].name, botCommands[key]);
 });
 
-const TOKEN = 'NzE4NjM1MTY3ODM2NjY4MDA1.XtrvJw.UcNeZ574AGciFWV3h-2xsFjqh7k'//process.env.token;
+const TOKEN = process.env.token;
 
 bot.login(TOKEN);
 
