@@ -12,14 +12,16 @@ module.exports = {
             maxAttempts: 2
           }).then( state => {
             let names = '';
-            for (let i = 0; i < state.players.length; i++) {
+            if (state.player.length > 0) {
+              for (let i = 0; i < state.players.length; i++) {
               names += state.players[i].name;
               if (i < state.players.length - 1) {
                 names += ", "
+                }
               }
+            } else {
+              names += 'No players online';
             }
-            console.log(state);
-            console.log("Player names ", names);
             const onlineEmbed = new Discord.MessageEmbed()
             .setColor('#009900')
             .setTitle(`${state.name}`)
