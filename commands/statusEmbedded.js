@@ -11,9 +11,15 @@ module.exports = {
             port: port,
             maxAttempts: 2
           }).then( state => {
-            const names = state.players.reduce(player => player[0]);
+            let names = '';
+            for (let i = 0; i < state.players.length; i++) {
+              names += state.players[i].name;
+              if (i < state.players.length - 1) {
+                names += ", "
+              }
+            }
             console.log(state);
-            console.log("Player names " + names[0]);
+            console.log("Player names ", names);
             const onlineEmbed = new Discord.MessageEmbed()
             .setColor('#009900')
             .setTitle(`${state.name}`)
@@ -21,6 +27,7 @@ module.exports = {
             .addFields(
                 { name: 'Server status', value: 'Online' },
                 { name: 'Players', value: `${state.players.length} of ${state.maxplayers}`},
+                {name: 'Names', value: names},
                 //{ name: 'Day', value: state.raw.rules.DayTime_s, inline: true },
             ).setTimestamp();
     
