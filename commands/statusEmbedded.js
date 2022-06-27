@@ -12,7 +12,7 @@ module.exports = {
             maxAttempts: 2
           }).then( state => {
             let names = '';
-            if (state.player.length > 0) {
+            if (state.players.length > 0) {
               for (let i = 0; i < state.players.length; i++) {
               names += state.players[i].name;
               if (i < state.players.length - 1) {
