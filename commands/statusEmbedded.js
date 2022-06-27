@@ -27,7 +27,10 @@ module.exports = {
             .addFields(
                 { name: 'Server status', value: 'Online' },
                 { name: 'Players', value: `${state.players.length} of ${state.maxplayers}`},
-                {name: 'Names', value: names},
+                { name: 'Names', value: names},
+                { name: 'Ping', value: `${state.ping} ms`},
+                { name: 'Map', value: state.map},
+                { name: 'IP', value: '67.219.138.178:27175' },
                 //{ name: 'Day', value: state.raw.rules.DayTime_s, inline: true },
             ).setTimestamp();
     

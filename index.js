@@ -36,7 +36,6 @@ bot.on('ready', () => {
 
 
 bot.on('messageCreate', msg => {
-  console.log("new ip" + ipAddress);
   const args = msg.content.split(/ +/);
   const command = args.shift().toLowerCase();
   console.info(`Called command: ${command}`);
