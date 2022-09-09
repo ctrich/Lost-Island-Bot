@@ -1,5 +1,5 @@
 # Ark Server Discord Bot
-This bot displays how if the server is online or offline and how many people are currently playing. The \'!\<server name\>\' command 
+This bot displays if the server is online or offline and how many people are currently playing. The \'!\<server name\>\' command 
 displays an embedded message in discord chat with more server information.
 
 
