@@ -17,7 +17,7 @@ displays an embedded message in discord chat with more server information.
 
 **Tech used:** Javascript, Node.js, Gamedig API, Discord API
 
-The specified Ark server is queried using the Gamedig API every three seconds. The response is sent to the Discord API using the method bot.user.setActivity(${state.players.length} of ${state.maxplayers}), which will display on the Discord side panel. If the bot doesn't receive a response, it shows that the server is offline. The bot waits for a user to input the string '!<server name>'. The '!<server name>' command will trigger another query for the server status, number of players, names of players, server ping, map name, and IP address and post an embedded message in the chat with the response.
+The specified Ark server is queried using the Gamedig API every three seconds. The response is sent to the Discord API using the method bot.user.setActivity(${state.players.length} of ${state.maxplayers}), which will display on the Discord side panel. If the bot doesn't receive a response, it shows that the server is offline. The bot waits for a user to input the string \'!\<server name\>\'. The \'!\<server name\>\' command will trigger another query for the server status, number of players, names of players, server ping, map name, and IP address and post an embedded message in the chat with the response.
 ## Optimizations
 At this point, every time this bot is used for a new server, a new bot has to be created and deployed. To fix this, I will
 
