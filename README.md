@@ -8,10 +8,10 @@ displays an embedded message in discord chat with more server information.
 ![embedded message with server information](https://user-images.githubusercontent.com/41929486/181074758-5cc1686d-dbbc-42bd-a84c-3f3d726e94da.png)
 
 ## Install:
--Clone the repo 
--Run npm install to install dependancies
--In index.js change the ipAddress and port variables to match your server.
--Run npm start to start the bot
+	-Clone the repo 
+	-Run npm install to install dependancies
+	-In index.js change the ipAddress and port variables to match your server.
+	-Run npm start to start the bot
 
 ## How It's Made:
 
